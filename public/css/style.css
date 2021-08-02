@@ -35,7 +35,7 @@ a {
   background: var(--light-color);
   color: var(--dark-color-a);
   border: 0;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 /* Chat Page */
@@ -71,7 +71,8 @@ a {
 }
 
 .chat-sidebar::-webkit-scrollbar {
-  display: none;
+  background-color: #3259b3;
+  width: 0.5rem;
 }
 
 .chat-sidebar h2 {
@@ -91,8 +92,7 @@ a {
 
 .chat-messages {
   padding: 30px;
-  max-height: 500px;
-  min-height: 500px;
+  height: 70vh;
   overflow-y: scroll;
 }
 
@@ -196,6 +196,36 @@ a {
 
   .chat-sidebar {
     display: none;
+  }
+
+  .chat-messages::-webkit-scrollbar {
+    display: none;
+  }
+  .chat-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .chat-form-container {
+    padding: 0.8rem 0.5rem;
+    /* margin: 0.5rem; */
+  }
+
+  #msg {
+    font-size: 0.8rem;
+    outline: none;
+  }
+
+  .chat-form-container button {
+    font-size: 0.78rem;
+  }
+
+  .chat-header .btn {
+    font-size: 0.8rem;
+  }
+
+  .chat-messages {
+    padding: 1rem;
+    font-size: 0.8rem;
   }
 }
 

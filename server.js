@@ -32,7 +32,7 @@ io.on("connection", (socket) => {
     //welcome the user
     socket.emit(
       "messageBot",
-      formatmsg("ChatBot", `Welcome to chatcord ${user.username} `)
+      formatmsg("ChatBot", `Welcome to ChatApp ${user.username}!`)
     );
 
     //broadcast msg when another user joins
@@ -40,7 +40,7 @@ io.on("connection", (socket) => {
       .to(user.room)
       .emit(
         "messageBot",
-        formatmsg("ChatBot", `${user.username} joined the chat`)
+        formatmsg("ChatBot", `${user.username} has joined the chat`)
       );
 
     //send room info to client(no event->io, else->socket)
