@@ -1,1 +1,1 @@
-web:node server.jsg
+web:node server.js
