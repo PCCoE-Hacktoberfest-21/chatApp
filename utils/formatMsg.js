@@ -4,7 +4,7 @@ const formatMsg = (username, msg) => {
   return {
     username: username,
     msg: msg,
-    time: moment().format("h:mm a"),
+    time: moment.utc().local().format("h:mm a"),
   };
 };
 
