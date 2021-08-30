@@ -15,3 +15,8 @@ To test the app, head over [here](https://chat-applicationn-1.herokuapp.com/) an
 
 <img src="https://github.com/palakg01/chatApp/blob/main/public/images/Capture2.PNG" width="70%" height="70%">
 <img src="https://github.com/palakg01/chatApp/blob/main/public/images/Capture3.PNG" width="40%" height="40%">
+
+<br>
+<br>
+
+> Note: Since the app has been posted using a free platform, it may be down towards the end of the month due to usage limits. 
