@@ -50,7 +50,11 @@ chatForm.addEventListener("submit", (e) => {
 //add msg to dom
 const addMessage = (message) => {
   const div = document.createElement("div");
-  div.classList.add("message");
+  if (socket.id === message.id) {
+    div.classList.add("message", "outgoing");
+  } else {
+    div.classList.add("message", "incoming");
+  }
   div.innerHTML = ` <p class="meta">${message.username} <span>${message.time}</span></p>
   <p class="text">
     ${message.msg}
