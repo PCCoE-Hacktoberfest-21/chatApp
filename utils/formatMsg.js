@@ -1,9 +1,10 @@
 const moment = require("moment");
 
-const formatMsg = (username, msg) => {
+const formatMsg = (username, msg, id) => {
   return {
     username: username,
     msg: msg,
+    id: id,
     time: moment.utc().local().format("h:mm a"),
   };
 };

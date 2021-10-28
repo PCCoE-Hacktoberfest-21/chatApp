@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
   //get user msg from client and emit it back to client
   socket.on("userMessage", (msg) => {
     const user = getCurrentUser(socket.id);
-    io.to(user.room).emit("message", formatmsg(user.username, msg));
+    io.to(user.room).emit("message", formatmsg(user.username, msg, socket.id));
   });
 
   //broadcast if another user disconnects
